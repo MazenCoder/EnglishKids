@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="8dp">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_custom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:paddingLeft="22dp"
+            android:paddingRight="40dp">
+
+
+            <TextView
+                android:id="@+id/tv_title_custom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="text_view"
+                android:textColor="@color/White"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/tv_des_custom"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_des_custom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="text_view"
+                android:maxLines="3"
+                android:textColor="@color/White"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:background="@drawable/ic_circular"
+            android:padding="8dp"
+            android:id="@+id/img_custom_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/ic_delete"
+            android:visibility="invisible" />
+
+        <!--
+        <LinearLayout
+            android:layout_gravity="right|center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.like.LikeButton
+                android:background="@drawable/ic_circular"
+                app:icon_type="Star"
+                app:icon_size="20dp"
+                app:liked="false"
+                app:anim_scale_factor="2"
+                app:is_enabled="false"
+                android:id="@+id/star_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.like.LikeButton
+                android:background="@drawable/ic_circular"
+                android:layout_gravity="center"
+                app:icon_type="heart"
+                app:icon_size="20dp"
+                app:liked="false"
+                android:id="@+id/heart_button"
+                app:anim_scale_factor="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        -->
+    </android.support.design.widget.CoordinatorLayout>
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:orientation="vertical"-->
+        <!--android:paddingLeft="32dp">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_title_card_display"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="title"-->
+            <!--android:textSize="30sp"-->
+            <!--app:fontFamily="sans-serif" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_des_card_display"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:text="title"-->
+            <!--android:textSize="18sp" />-->
+
+        <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:background="@drawable/background"-->
+            <!--android:drawableLeft="@drawable/ic_play"-->
+            <!--android:text="Start" />-->
+    <!--</LinearLayout>-->
+
+</android.support.design.card.MaterialCardView>

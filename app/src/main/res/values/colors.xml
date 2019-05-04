@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#B9000F</color>
+    <color name="colorPrimaryDark">#A00013</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="selector_item_color">#4444</color>
+
+    // My Color
+    <color name="red">#FE6160</color>
+    <color name="yellow">#FFECB2</color>
+    <color name="green">#5EE18F</color>
+
+    <!--My Color -->
+    <color name="black">#414141</color>
+    <color name="blue1">#66a3ff</color>
+    <color name="blue2">#0033cc</color>
+    <color name="linkBlue">#4d94ff</color>
+    <color name="blue3">#00c4cc</color>
+    <color name="blue4">#00aab1</color>
+    <color name="blue5">#007f85</color>
+    <color name="White">#ffffff</color>
+    <color name="Grey">#c3c3c3</color>
+    <color name="DarkGrey">#737373 </color>
+    <color name="Black">#000000</color>
+
+    <!--&lt;!&ndash; Screens background color&ndash;&gt;-->
+    <!--<color name="bg_screen1">#f64c73</color>-->
+    <!--<color name="bg_screen2">#20d2bb</color>-->
+    <!--<color name="bg_screen3">#3395ff</color>-->
+    <!--<color name="bg_screen4">#c873f4</color>-->
+    <!--<color name="bg_screen5">#f59825</color>-->
+
+    <!--&lt;!&ndash; dots inactive colors &ndash;&gt;-->
+    <!--<color name="dot_dark_screen1">#d1395c</color>-->
+    <!--<color name="dot_dark_screen2">#14a895</color>-->
+    <!--<color name="dot_dark_screen3">#2278d4</color>-->
+    <!--<color name="dot_dark_screen4">#a854d4</color>-->
+    <!--<color name="dot_dark_screen5">#f57f17</color>-->
+
+    <!--&lt;!&ndash; dots active colors &ndash;&gt;-->
+    <!--<color name="dot_light_screen1">#f98da5</color>-->
+    <!--<color name="dot_light_screen2">#8cf9eb</color>-->
+    <!--<color name="dot_light_screen3">#93c6fd</color>-->
+    <!--<color name="dot_light_screen4">#e4b5fc</color>-->
+    <!--<color name="dot_light_screen5">#fbc02d</color>-->
+</resources>

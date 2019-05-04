@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="15dp"
+    android:gravity="center"
+    android:layout_marginLeft="15dp"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/resend_verification_email"
+        android:textAlignment="center"
+        android:textColor="@color/Black"
+        android:textSize="21sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_spinner">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email_address"
+        android:id="@+id/confirm_email"
+        android:inputType="textEmailAddress"
+        android:textSize="20sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/background_spinner">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:id="@+id/confirm_password"
+        android:inputType="textPassword"
+        android:textSize="20sp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            style="@style/FlatButton"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/linkBlue"
+            android:text="@string/cancel"
+            android:id="@+id/dialogCancel"/>
+
+        <Button
+            style="@style/FlatButton"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/linkBlue"
+            android:text="@string/send_link"
+            android:layout_alignParentRight="true"
+            android:id="@+id/dialogConfirm"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "304819156925",
+    "firebase_url": "https://englishkids-1bf90.firebaseio.com",
+    "project_id": "englishkids-1bf90",
+    "storage_bucket": "englishkids-1bf90.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304819156925:android:2a8d070e70cb6879",
+        "android_client_info": {
+          "package_name": "com.mobidroid.englishkids"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "304819156925-l838u1jmnjejbpb1i2o047p1hjepga37.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mobidroid.englishkids",
+            "certificate_hash": "ca6a80c467fcb60482a28b01edb6e9a39dee0541"
+          }
+        },
+        {
+          "client_id": "304819156925-pe50um0ngl1plilit4oh0010vbi3lu8i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYq6iFvL8AdSoC4w7umzt04Tkk7dEEbUU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "304819156925-pe50um0ngl1plilit4oh0010vbi3lu8i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

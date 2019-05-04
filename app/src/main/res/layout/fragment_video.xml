@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".fragment.VideoFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_new_video"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_spinner">
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinner_course"
+            android:layout_width="match_parent"
+            android:layout_margin="8dp"
+            android:padding="16dp"
+            android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/et_title_video"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_title"
+                android:inputType="text|textMultiLine"
+                android:scrollbars="vertical" />
+
+            <EditText
+                android:id="@+id/et_description_video"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|left"
+                    android:hint="@string/enter_description"
+                android:inputType="text|textMultiLine"
+                android:scrollbars="vertical"
+                android:minLines="6"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_url_video"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="enter url video"
+            android:inputType="text|textMultiLine"
+            android:scrollbars="vertical" />
+
+        <Button
+            android:id="@+id/but_get_video"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/but_white"
+            android:text="get video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/but_upload_video"
+            android:layout_marginTop="16dp"
+            android:text="upload video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background"/>
+
+    </LinearLayout>
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

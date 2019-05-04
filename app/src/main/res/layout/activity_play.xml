@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true">
+
+        <!--<include layout="@layout/custom_toolbar"/>-->
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleMarginEnd="64dp">
+
+            <!--app:layout_scrollFlags="scroll|exitUntilCollapsed"-->
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:background="@color/Black"
+                android:layout_height="match_parent">
+
+                <!--<VideoView-->
+                    <!--android:id="@+id/videoView"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:fitsSystemWindows="true"-->
+                    <!--android:minWidth="854dip" />-->
+
+                <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+                    android:id="@+id/exoplayer"
+                    android:fitsSystemWindows="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minWidth="854dip"/>
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBarPlay"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="visible" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_fragment_course"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:layout_collapseMode="pin"/>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:layout_marginBottom="?attr/actionBarSize"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tv_title_video"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textSize="24sp"
+                android:hint="title video"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_des_video"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="top|left"
+                android:hint="description video"
+                android:inputType="text|textMultiLine"
+                android:minLines="6"
+                android:scrollbars="vertical"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <!--<LinearLayout-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/actionBarSize">-->
+
+        <!--<Button-->
+            <!--android:id="@+id/but_back_video"-->
+            <!--android:text="back"-->
+            <!--android:onClick="backVideo"-->
+            <!--android:background="@drawable/but_blue"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="2"-->
+            <!--android:layout_height="?attr/actionBarSize" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/but_next_video"-->
+            <!--android:text="next"-->
+            <!--android:onClick="nextVideo"-->
+            <!--android:background="@drawable/but_background"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="2"-->
+            <!--android:layout_height="?attr/actionBarSize"-->
+            <!--android:drawableLeft="@drawable/ic_account" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<android.support.design.widget.BottomNavigationView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--app:menu="@menu/account_menu"-->
+        <!--android:background="@color/colorPrimary"-->
+        <!--android:layout_weight="2" />-->
+
+    <android.support.design.widget.BottomNavigationView
+        android:layout_gravity="bottom"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/play_menu"
+        android:id="@+id/but_navigation_play"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@color/White"
+        app:itemTextColor="@color/White"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!--<com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx-->
+        <!--android:id="@+id/bnve"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:background="@color/colorPrimary"-->
+        <!--app:itemIconTint="@color/White"-->
+        <!--app:itemTextColor="@color/White"-->
+        <!--app:labelVisibilityMode="labeled"-->
+        <!--app:menu="@menu/play_menu" />-->
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".sing.SingUpActivity"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:layout_gravity="center"
+        android:background="@color/White"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:padding="16dp"
+        android:paddingTop="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <!--<TextView-->
+            <!--android:id="@+id/textView3"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/sign_up"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textAllCaps="true"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:textSize="30sp"-->
+            <!--android:textStyle="bold" />-->
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/please_file_all"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_name"
+            style="@style/EditText"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/et_sig_name"
+                style="@style/EditText"
+                android:ems="10"
+                android:hint="@string/full_name"
+                android:inputType="textPersonName" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_email"
+            style="@style/EditText"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/et_sig_email"
+                style="@style/EditText"
+                android:ems="10"
+                android:hint="@string/email_address"
+                android:inputType="textEmailAddress" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_pass"
+            style="@style/EditText"
+            app:passwordToggleEnabled="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/et_sig_pass"
+                style="@style/EditText"
+                android:ems="10"
+                android:hint="@string/password"
+                android:inputType="textPassword" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!--<android.support.design.widget.TextInputLayout-->
+            <!--android:id="@+id/til_confirm_pass"-->
+            <!--style="@style/EditText"-->
+            <!--app:passwordToggleEnabled="true"-->
+            <!--android:layout_marginTop="10dp">-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/et_sig_confirm_pass"-->
+                <!--style="@style/EditText"-->
+                <!--android:ems="10"-->
+                <!--android:hint="@string/confirm_password"-->
+                <!--android:inputType="textPassword" />-->
+        <!--</android.support.design.widget.TextInputLayout>-->
+
+        <!--<android.support.design.widget.TextInputLayout-->
+            <!--android:id="@+id/til_phone"-->
+            <!--style="@style/EditText"-->
+            <!--android:layout_marginTop="10dp">-->
+            <!--<EditText-->
+                <!--android:id="@+id/et_sig_phone"-->
+                <!--style="@style/EditText"-->
+                <!--android:ems="10"-->
+                <!--android:hint="@string/phone_number"-->
+                <!--android:inputType="phone" />-->
+        <!--</android.support.design.widget.TextInputLayout>-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="70dp"-->
+            <!--android:gravity="center"-->
+            <!--android:background="@drawable/background_spinner">-->
+        <!--<android.support.v7.widget.AppCompatSpinner-->
+            <!--android:id="@+id/spinner"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"/>-->
+        <!--</RelativeLayout>-->
+
+        <Button
+            android:id="@+id/but_register"
+            style="@style/EditText"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/but_blue"
+            android:onClick="RegisterUser"
+            android:text="@string/register"
+            android:textColor="@color/White"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_sig_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:onClick="goToLogin"
+            android:text="@string/login"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+    <ProgressBar
+        android:layout_gravity="center"
+        android:id="@+id/progress_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible" />
+
+</android.support.design.widget.CoordinatorLayout>
